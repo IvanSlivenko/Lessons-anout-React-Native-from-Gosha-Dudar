@@ -1,0 +1,141 @@
+----------------------------------------------- Lessons 1
+https://www.youtube.com/watch?v=j9nVVIq9eSQ
+
+-----------------------------------------------
+00 : 00 : 00
+
+
+---------------------------------------------- Lessons 2
+https://youtu.be/YjuaFefiQe4
+
+expo
+
+https://expo.dev/new/develop
+UmanProger
+iv07092006sl
+
+npm i -g expo-cli (-g ---> Global )
+
+expo init UmanProgerReactNative
+npm install
+npx expo install react-dom react-native-web
+
+https://developer.android.com/studio?hl=ru
+
+
+
+===============================================
+
+npm start  ---> Запуск проекту
+
+-----------------------------------------------
+00 : 14 : 22
+
+------------------------------------------------------ Lesson 3
+https://youtu.be/2d_pn5oKrRg
+
+------------------------------------------------------
+00 : 25 : 40
+
+
+
+
+===================================
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text>Hello!</Text>
+      <StatusBar style="auto" />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
+
+===================================
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View, SafeAreaView, Button, Alert, TextInput } from 'react-native';
+import { useState } from 'react';
+
+
+export default function App() {
+  const handleTextPress = () => console.log('Text pressed')
+  const handleButtonPress = () => {
+    console.log('handleButtonPress_Click')
+    Alert.alert("UmanProger", "Main message", [
+      { text: "Так", onPress: () => console.log('Yes button') },
+      { text: "Відмінити", onPress: () => console.log('No button') }
+    ])
+  };
+
+  const handleButtonPress_2 = () => {
+    console.log('handleButtonPress_Click_2')
+    Alert.prompt("UmanProger", "Main message", text => console.log(text))
+  };
+
+  const handleShowText = () => {
+    console.log(text);
+    setText('');
+  };
+
+  const [text, setText] = useState('');
+
+  return (
+    <SafeAreaView style={styles.container}>
+      <Text
+        numberOfLines={2}
+        style={styles.text}
+        onPress={handleTextPress}
+      >
+        Hello {'\n'}My APP !!!
+      </Text>
+      <Button
+        title="Натисни на мене"
+        color='grey'
+        onPress={handleButtonPress}
+      />
+      <TextInput
+        style={{ borderWidth: 1, padding: 10, margin: 10 }}
+        placeholder="Введи текст"
+        value={text}
+        onChangeText={setText}
+      />
+      <Button
+        title="Кнопка 2"
+        color="purple"
+        // onPress={handleButtonPress_2}
+        onPress={handleShowText}
+      />
+
+
+      <StatusBar style="auto" />
+    </SafeAreaView >
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    // alignItems: 'center',
+    // justifyContent: 'center',
+  },
+  text: {
+    color: '#333',
+    fontSize: 18,
+    fontWeight: '500'
+  },
+
+});
+
+===================================
