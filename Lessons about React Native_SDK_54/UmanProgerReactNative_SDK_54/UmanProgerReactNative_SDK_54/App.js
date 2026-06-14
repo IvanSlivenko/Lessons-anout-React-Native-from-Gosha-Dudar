@@ -10,26 +10,42 @@ import { useState } from 'react';
 
 import Header from './components/Header';
 import ListItem from './components/ListItem';
-
+import Form from './components/Form';
 
 
 export default function App() {
 
   const [listOItems, setListOfItems] = useState([
-    { text: 'Перенести мішки з січеною гілкою у дровник', index: 1 },
-    { text: 'Придбати дрова', index: 2 },
-    { text: 'Перенести дрова у дровник', index: 3 },
-    { text: 'Пройти навчання з react native', index: 4 },
+    { text: 'Перенести мішки з січеною гілкою у дровник', key: '1' },
+    { text: 'Придбати дрова', key: '2' },
+    { text: 'Перенести дрова у дровник', key: '3' },
+    { text: 'Пройти навчання з react native', key: '4' },
   ])
+
+  const addHandler = (text) => {
+    setListOfItems((list) => {
+      return [
+        { text: text, key: Math.random().toString(36).substring(7) },
+        ...list
+      ]
+    })
+  }
+
+  const deleteHandler = (key) => {
+    setListOfItems((list) => {
+      return list.filter(listOItems => listOItems.key != key)
+    })
+  }
 
   return (
 
 
     <View>
       <Header />
+      <Form addHandler={addHandler} />
       <FlatList data={listOItems} renderItem={({ item }) => (
         // <Text>{item.index}. {item.text}</Text>
-        <ListItem el={item} />
+        <ListItem el={item} deleteHandler={deleteHandler} />
       )} />
     </View>
 

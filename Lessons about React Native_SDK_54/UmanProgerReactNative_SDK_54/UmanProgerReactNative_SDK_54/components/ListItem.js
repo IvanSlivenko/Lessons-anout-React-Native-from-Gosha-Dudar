@@ -3,19 +3,20 @@ import {
     StyleSheet,
     View,
     Text,
-    TouchableHighlight
+    TouchableHighlight,
+    TouchableOpacity
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 
-export default function ListItem({ el }) {
+export default function ListItem({ el, deleteHandler }) {
 
     return (
 
 
-        <TouchableHighlight>
-            <Text style={styles.text}>{el.index}. {el.text}</Text>
-        </TouchableHighlight>
+        <TouchableOpacity onPress={() => deleteHandler(el.key)}>
+            <Text style={styles.text}>{el.text}</Text>
+        </TouchableOpacity>
 
 
 
