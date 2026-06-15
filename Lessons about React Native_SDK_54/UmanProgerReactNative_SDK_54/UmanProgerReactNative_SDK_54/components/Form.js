@@ -29,6 +29,7 @@ export default function Form({ addHandler }) {
                 value={text}
                 onChangeText={onChange}
                 placeholder='Опишіть завдання ...'
+                placeholderTextColor="#fff"
             />
             <View style={styles.buttonWrapper}>
                 <TouchableHighlight
@@ -57,15 +58,18 @@ export default function Form({ addHandler }) {
 const styles = StyleSheet.create({
     input: {
         borderBottomWidth: 1,
-        borderColor: '#000',
+        // borderColor: '#000',
+        borderColor: '#fff',
         padding: 10,
         marginVertical: 30,
         marginHorizontal: '20%',
-        width: '60%'
+        width: '60%',
+        color: '#fff'
     },
     buttonAdd: {
         width: '60%',
         backgroundColor: '#696060',
+        // backgroundColor: '#00a046',
         alignSelf: 'center',
         padding: 12,
         borderRadius: 8,
