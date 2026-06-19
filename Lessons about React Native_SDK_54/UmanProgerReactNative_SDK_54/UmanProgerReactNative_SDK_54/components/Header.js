@@ -14,6 +14,7 @@ export default function Header() {
 
         <View style={styles.main}>
             <Text style={styles.text}>Список справ</Text>
+            {/* <Text style={styles.text}>Оберіть майстрів</Text> */}
         </View>
 
 

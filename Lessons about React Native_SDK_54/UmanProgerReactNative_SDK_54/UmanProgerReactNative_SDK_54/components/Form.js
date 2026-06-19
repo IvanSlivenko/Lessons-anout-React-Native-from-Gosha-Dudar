@@ -20,7 +20,6 @@ export default function Form({ addHandler }) {
         setValue(text);
     };
 
-
     return (
         <View>
 
@@ -28,7 +27,8 @@ export default function Form({ addHandler }) {
                 style={styles.input}
                 value={text}
                 onChangeText={onChange}
-                placeholder='Опишіть завдання ...'
+                // placeholder='Опишіть завдання ...'
+                placeholder='Що вас цікавить ...'
                 placeholderTextColor="#fff"
             />
             <View style={styles.buttonWrapper}>
@@ -47,7 +47,8 @@ export default function Form({ addHandler }) {
                     }}
                 >
                     <Text style={styles.buttonAddText}>
-                        Додати завдання
+                        {/* Додати завдання */}
+                        Відправити запитання
                     </Text>
                 </TouchableHighlight>
             </View>

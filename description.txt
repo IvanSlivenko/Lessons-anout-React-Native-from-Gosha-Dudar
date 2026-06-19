@@ -4,3 +4,39 @@ https://www.youtube.com/watch?v=j9nVVIq9eSQ
 -----------------------------------------------
 00 : 00 : 00
 
+
+---------------------------------------------- Lessons 2
+https://youtu.be/YjuaFefiQe4
+
+expo
+
+https://expo.dev/new/develop
+UmanProger
+iv07092006sl
+
+npm i -g expo-cli (-g ---> Global )
+
+expo init UmanProgerReactNative
+npm install
+npx expo install react-dom react-native-web
+
+https://developer.android.com/studio?hl=ru
+
+
+
+===============================================
+
+npm start  ---> Запуск проекту
+
+-----------------------------------------------
+00 : 14 : 22
+
+------------------------------------------------------ Lesson 3
+https://youtu.be/2d_pn5oKrRg
+
+------------------------------------------------------
+00 : 07 : 24
+
+
+
+
