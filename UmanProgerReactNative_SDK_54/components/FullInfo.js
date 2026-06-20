@@ -3,17 +3,13 @@ import { StyleSheet, View, Text, Button } from 'react-native';
 import { useFonts } from 'expo-font';
 import { gStyle } from '../styles/style';
 
-export default function Contacts({ navigation }) {
+export default function FullInfo({ route }) {
 
-    // const loadScene = () => {
-    //     navigation.goBack()
-    // }
 
     return (
         <View style={gStyle.main}>
-            <Text style={gStyle.title}>
-                Cторінка про нас
-            </Text>
+            <Text style={gStyle.title}>{route.params.name}</Text>
+            <Text >{route.params.full}</Text>
             {/* <Button title='Відкрити сторінку' onPress={loadScene} /> */}
         </View>
     );

@@ -68,6 +68,13 @@ npx expo install react-native-gesture-handler
 -----------------------------------------------------
 00 : 16 : 32
 
+
+--------------------------------------------------- Lesson 8
+https://youtu.be/cQpYw4tCo1k?list=PL0lO_mIqDDFWPVIWdB7tjU5aznqXAXvLL
+
+---------------------------------------------------
+00 : 04 : 34
+
 =================================== app reserv1
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';

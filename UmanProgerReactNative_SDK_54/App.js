@@ -4,7 +4,7 @@ import { useFonts } from 'expo-font';
 import { gStyle } from './styles/style';
 
 import Main from './components/Main';
-import Contacts from './components/Contacts';
+import Contacts from './components/FullInfo';
 import MainStack from './navigate';
 import Loading from './components/Loading';
 

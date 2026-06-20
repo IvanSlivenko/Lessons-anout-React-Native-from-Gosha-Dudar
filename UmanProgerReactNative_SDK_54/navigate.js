@@ -1,13 +1,13 @@
 import React from 'react';
 import Main from './components/Main';
-import Contacts from './components/Contacts';
+import FullInfo from './components/FullInfo';
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 
 const Stack = createNativeStackNavigator();
 
-export default function Navigate() {
+export default function MainStack() {
     return <NavigationContainer>
         <Stack.Navigator>
             <Stack.Screen
@@ -15,14 +15,21 @@ export default function Navigate() {
                 component={Main}
                 options={{
                     title: 'Головна',
-                    headerTitleAlign: 'center'
+                    headerTitleAlign: 'center',
+                    headerStyle: {
+                        backgroundColor: '#eb5d3d',
+                        height: 100,
+                        headerTitleStyle: {
+                            fontWeight: 'light'
+                        }
+                    }
                 }}
             />
             <Stack.Screen
-                name="Contacts"
-                component={Contacts}
+                name="FullInfo"
+                component={FullInfo}
                 options={{
-                    title: 'Контакти',
+                    title: 'Стаття',
                     headerTitleAlign: 'center'
                 }}
             />
