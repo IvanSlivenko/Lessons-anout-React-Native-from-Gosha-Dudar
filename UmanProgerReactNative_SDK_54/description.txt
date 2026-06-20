@@ -55,7 +55,18 @@ https://youtu.be/t7rzCbRBqLU?list=PL0lO_mIqDDFWPVIWdB7tjU5aznqXAXvLL
 -----------------------------------------------------
 00 : 15 : 02
 
+----------------------------------------------------- Lesson 7
+https://youtu.be/D8TMiiN1d8k?list=PL0lO_mIqDDFWPVIWdB7tjU5aznqXAXvLL
 
+npm install @react-navigation/native
+npm install @react-navigation/native-stack
+npx expo install react-native-screens react-native-safe-area-context
+npx expo install react-native-gesture-handler
+
+
+
+-----------------------------------------------------
+00 : 16 : 32
 
 =================================== app reserv1
 import { StatusBar } from 'expo-status-bar';

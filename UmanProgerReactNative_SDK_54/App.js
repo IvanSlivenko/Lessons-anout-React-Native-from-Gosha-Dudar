@@ -3,6 +3,11 @@ import { View, Text } from 'react-native';
 import { useFonts } from 'expo-font';
 import { gStyle } from './styles/style';
 
+import Main from './components/Main';
+import Contacts from './components/Contacts';
+import MainStack from './navigate';
+import Loading from './components/Loading';
+
 export default function App() {
 
   const [fontsLoaded] = useFonts({
@@ -12,21 +17,11 @@ export default function App() {
 
   if (fontsLoaded) {
     return (
-      <View style={gStyle.main}>
-        <Text
-          style={gStyle.title}
-        >
-          Hello
-        </Text>
-      </View>
+      <MainStack />
     );
   } else {
     return (
-      < View style={gStyle.main} >
-        <Text style={gStyle.title}>
-          Upload
-        </Text>
-      </View >
+      <Loading />
     )
   }
 
