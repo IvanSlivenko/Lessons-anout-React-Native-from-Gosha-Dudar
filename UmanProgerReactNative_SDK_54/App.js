@@ -13,6 +13,8 @@ export default function App() {
   const [fontsLoaded] = useFonts({
     'mt-ital': require('./assets/fonts/Montserrat-Italic-VariableFont_wght.ttf'),
     'mt-light': require('./assets/fonts/Montserrat-VariableFont_wght.ttf'),
+    'mt-bolt': require('./assets/fonts/Montserrat-Bold.ttf'),
+    'mt-regular': require('./assets/fonts/Montserrat-Regular.ttf'),
   });
 
   if (fontsLoaded) {

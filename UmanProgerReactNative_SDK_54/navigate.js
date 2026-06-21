@@ -20,7 +20,7 @@ export default function MainStack() {
                         backgroundColor: '#eb5d3d',
                         height: 100,
                         headerTitleStyle: {
-                            fontWeight: 'light'
+                            fontWeight: '400'
                         }
                     }
                 }}

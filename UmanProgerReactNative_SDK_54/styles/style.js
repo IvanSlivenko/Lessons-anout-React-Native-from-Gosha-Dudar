@@ -4,13 +4,14 @@ export const gStyle = StyleSheet.create({
     main: {
         flex: 1,
         padding: 20,
-        paddingTop: 60,
-        backgroundColor: 'gray'
+        paddingTop: 30,
+        backgroundColor: '#fff'
     },
     title: {
-        fontSize: 20,
-        color: '#fff',
-        fontFamily: 'mt-ital',
-        textAlign: 'center'
+        fontSize: 25,
+        color: '#302f2f',
+        fontFamily: 'mt-light',
+        textAlign: 'center',
+        // marginTop: 25
     }
 })

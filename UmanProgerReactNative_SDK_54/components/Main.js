@@ -14,16 +14,13 @@ export default function Main({ navigation }) {
 
     return (
         <View style={gStyle.main}>
-            <Text style={gStyle.title}>Головна сторінка</Text>
+            {/* <Text style={[gStyle.title, styles.header]}>Новини</Text> */}
+            <Text style={[gStyle.title, styles.header]}>Новини</Text>
             <FlatList data={news} renderItem={({ item }) => (
-                <TouchableOpacity onPress={() => navigation.navigate('FullInfo', item)}>
-                    <Image source={{
-                        width: '100%',
-                        height: 200,
-                        uri: item.img
-                    }} />
-                    <Text>{item.name}</Text>
-                    <Text>{item.anons}</Text>
+                <TouchableOpacity style={styles.item} onPress={() => navigation.navigate('FullInfo', item)}>
+                    <Image style={styles.image} source={{ uri: item.img }} />
+                    <Text style={styles.title}>{item.name}</Text>
+                    <Text style={styles.anons}>{item.anons}</Text>
 
                 </TouchableOpacity>
             )} />
@@ -32,6 +29,31 @@ export default function Main({ navigation }) {
     );
 }
 
-const sryles = StyleSheet.create({
+const styles = StyleSheet.create({
+    title: {
+        fontFamily: 'mt-bolt',
+        fontSize: 22,
+        textAlign: 'center',
+        marginTop: 20,
+        color: '#474747'
 
+    },
+    anons: {
+        fontFamily: 'mt-light',
+        fontSize: 16,
+        textAlign: 'center',
+        marginTop: 5,
+        color: '#474747'
+    },
+    item: {
+        width: '100%',
+        marginBottom: 30,
+    },
+    header: {
+        marginBottom: 30
+    },
+    image: {
+        weight: '100%',
+        height: 200
+    }
 });

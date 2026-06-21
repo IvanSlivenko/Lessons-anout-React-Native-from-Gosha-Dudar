@@ -75,6 +75,13 @@ https://youtu.be/cQpYw4tCo1k?list=PL0lO_mIqDDFWPVIWdB7tjU5aznqXAXvLL
 ---------------------------------------------------
 00 : 04 : 34
 
+
+------------------------------------------------------------------------- Lesson 9
+https://youtu.be/PaFr6_rFWZM?list=PL0lO_mIqDDFWPVIWdB7tjU5aznqXAXvLL
+
+---------------------------------------------------
+00 : 03 : 12
+
 =================================== app reserv1
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
