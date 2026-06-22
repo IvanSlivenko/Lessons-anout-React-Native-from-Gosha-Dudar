@@ -87,8 +87,10 @@ npm i @expo/vector-icons
 ----------------------------------------------------------------------- Lesson 10
 https://youtu.be/qyEKLzRtQAc?list=PL0lO_mIqDDFWPVIWdB7tjU5aznqXAXvLL
 
+npm i formik
+
 --------------------------------------------------
-00 : 00 : 00
+00 : 13 : 26
 
 
 ===================================

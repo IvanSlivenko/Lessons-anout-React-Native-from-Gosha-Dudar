@@ -4,6 +4,7 @@ import { useFonts } from 'expo-font';
 import { gStyle } from '../styles/style';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import Form_formik from './Form_formik';
 
 export default function Main({ navigation }) {
 
@@ -25,6 +26,7 @@ export default function Main({ navigation }) {
                 <View style={gStyle.main}>
                     <MaterialCommunityIcons name="close-circle-outline" size={34} color="#8e0cf8" style={styles.iconClose} onPress={() => setmodalWindow(false)} />
                     <Text style={styles.title}>Форма додавання статей</Text>
+                    <Form_formik />
                 </View>
 
             </Modal>
