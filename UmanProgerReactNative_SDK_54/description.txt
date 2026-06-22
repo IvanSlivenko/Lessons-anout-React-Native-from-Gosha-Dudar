@@ -79,115 +79,19 @@ https://youtu.be/cQpYw4tCo1k?list=PL0lO_mIqDDFWPVIWdB7tjU5aznqXAXvLL
 ------------------------------------------------------------------------- Lesson 9
 https://youtu.be/PaFr6_rFWZM?list=PL0lO_mIqDDFWPVIWdB7tjU5aznqXAXvLL
 
+npm i @expo/vector-icons
+
 ---------------------------------------------------
 00 : 03 : 12
 
-=================================== app reserv1
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+----------------------------------------------------------------------- Lesson 10
+https://youtu.be/qyEKLzRtQAc?list=PL0lO_mIqDDFWPVIWdB7tjU5aznqXAXvLL
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Hello!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+--------------------------------------------------
+00 : 00 : 00
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
-
-=================================== app reserv2
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, SafeAreaView, Button, Alert, TextInput } from 'react-native';
-import { useState } from 'react';
-
-
-export default function App() {
-  const handleTextPress = () => console.log('Text pressed')
-  const handleButtonPress = () => {
-    console.log('handleButtonPress_Click')
-    Alert.alert("UmanProger", "Main message", [
-      { text: "Так", onPress: () => console.log('Yes button') },
-      { text: "Відмінити", onPress: () => console.log('No button') }
-    ])
-  };
-
-  const handleButtonPress_2 = () => {
-    console.log('handleButtonPress_Click_2')
-    Alert.prompt("UmanProger", "Main message", text => console.log(text))
-  };
-
-  const handleShowText = () => {
-    console.log(text);
-    setText('');
-  };
-
-  const [text, setText] = useState('');
-
-  return (
-    <SafeAreaView style={styles.container}>
-      <Text
-        numberOfLines={2}
-        style={styles.text}
-        onPress={handleTextPress}
-      >
-        Hello {'\n'}My APP !!!
-      </Text>
-      <Button
-        title="Натисни на мене"
-        color='grey'
-        onPress={handleButtonPress}
-      />
-      <TextInput
-        style={{ borderWidth: 1, padding: 10, margin: 10 }}
-        placeholder="Введи текст"
-        value={text}
-        onChangeText={setText}
-      />
-      <Button
-        title="Кнопка 2"
-        color="purple"
-        // onPress={handleButtonPress_2}
-        onPress={handleShowText}
-      />
-
-
-      <StatusBar style="auto" />
-    </SafeAreaView >
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    // alignItems: 'center',
-    // justifyContent: 'center',
-  },
-  text: {
-    color: '#333',
-    fontSize: 18,
-    fontWeight: '500'
-  },
-
-});
 
 ===================================
 
-Скачувати
-реєструватись
-
-
-user (від кого)
-текст повідомлення
-статус доставки повідомлення
 
 
