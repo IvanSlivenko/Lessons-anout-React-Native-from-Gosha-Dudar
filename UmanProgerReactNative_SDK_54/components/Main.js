@@ -17,7 +17,16 @@ export default function Main({ navigation }) {
 
     const [modalWindow, setmodalWindow] = useState(false);
 
-
+    const addArticle = (article) => {
+        setNews((list) => {
+            article.key = Math.random().toString();
+            return [
+                article,
+                ...list
+            ]
+        })
+        setmodalWindow(false);
+    }
 
 
     return (
@@ -26,7 +35,7 @@ export default function Main({ navigation }) {
                 <View style={gStyle.main}>
                     <MaterialCommunityIcons name="close-circle-outline" size={34} color="#8e0cf8" style={styles.iconClose} onPress={() => setmodalWindow(false)} />
                     <Text style={styles.title}>Форма додавання статей</Text>
-                    <Form_formik />
+                    <Form_formik addArticle={addArticle} />
                 </View>
 
             </Modal>
